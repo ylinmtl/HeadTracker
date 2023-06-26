@@ -10,7 +10,7 @@
 // Board Features
 #define HAS_3DIODE_RGB
 #define HAS_NOTIFYLED
-#define HAS_MPU9250
+#define HAS_MPU6500
 #define HAS_CENTERBTN
 #define HAS_PPMIN
 #define HAS_PPMOUT
@@ -31,9 +31,9 @@
   PIN(SCL,          NRFPIN(0,  5), "J2-5 I2C SCL") \
   PIN(TX,           NRFPIN(1, 11), "J1-3 UART TX") \
   PIN(RX,           NRFPIN(1, 12), "J1-2 UART RX") \
-  PIN(SCK,          NRFPIN(1, 13), "J3-2 SPI CLOCK") \
-  PIN(MISO,         NRFPIN(1, 14), "J3-3 SPI MISO") \
-  PIN(MOSI,         NRFPIN(1, 15), "J3-4 SPI MOSI") \
+  PIN(EXT_SCK,      NRFPIN(1, 13), "J3-2 SPI CLOCK") \
+  PIN(EXT_MISO,     NRFPIN(1, 14), "J3-3 SPI MISO") \
+  PIN(EXT_MOSI,     NRFPIN(1, 15), "J3-4 SPI MOSI") \
   PIN(LEDR,         NRFPIN(0, 26), "Red LED") \
   PIN(LEDG,         NRFPIN(0, 30), "Green LED") \
   PIN(LEDB,         NRFPIN(0,  6), "Blue LED") \

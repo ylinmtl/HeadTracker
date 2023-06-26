@@ -22,6 +22,9 @@
 #elif defined(PCB_XIAOSENSE)
 #define FW_BOARD "XIAOSENSE"
 #include "boards/xiaosense.h"
+#elif defined(PCB_XIAOLAB)
+#define FW_BOARD "XIAOSENSE"
+#include "boards/xiao_lab.h"
 #else
 #error NO PCB DEFINED
 #endif
