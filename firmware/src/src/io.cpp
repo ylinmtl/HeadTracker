@@ -254,7 +254,7 @@ void io_init()
   digitalWrite(IO_I2C_PU, 1);
 #endif
 
-#if defined(PCB_XIAOSENSE)
+#if defined(HAS_LSM6DS3) && (defined(PCB_XIAOLAB) || defined(PCB_XIAOSENSE))
   // 10K I2C Pull up Resistors on internal LSM6DS3, High Drive Strength
   pinMode(IO_LSM6DS3PWR, GPIO_OUTPUT | GPIO_DS_ALT_LOW | GPIO_DS_ALT_HIGH);
   // Shut Sensor off

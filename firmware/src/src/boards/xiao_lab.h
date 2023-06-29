@@ -10,10 +10,13 @@
 // Board Features
 #define HAS_3DIODE_RGB
 #define HAS_NOTIFYLED
-#define HAS_MPU6500
+#define HAS_LSM6DS3
 #define HAS_CENTERBTN
 #define HAS_PPMIN
 #define HAS_PPMOUT
+
+// Mapping Analog numbers to Analog pins
+#define AN0 7 // Battery Voltage
 
 // Pins (name, number, description)
 // NOTE: These pins are an enum entry. e.g. IO_D2 = 0

@@ -67,18 +67,20 @@
 &i2c1 {
 	compatible = "nordic,nrf-twim";
 	status = "okay";
-	sda-pin = <4>;
-	scl-pin = <5>;
+	//sda-pin = <4>; // External I2C
+	//scl-pin = <5>;
+	sda-pin =  <7>; // Internal I2C
+	scl-pin = <27>;
   clock-frequency = <400000>;
 };
 
-&spi2 {
+/*&spi2 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
 	sck-pin = <45>; //P1.13
 	miso-pin = <46>; //P1.14
   mosi-pin = <47>; //P1.15
-};
+};*/
 
 &spi3 {
 	status = "okay";

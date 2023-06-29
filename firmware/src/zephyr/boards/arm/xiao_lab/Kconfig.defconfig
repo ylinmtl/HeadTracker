@@ -11,6 +11,9 @@ config BOARD
 config BT_CTLR
 	default BT
 
+config BOARD_XIAO_LAB_INIT
+	default y
+
 endif # BOARD_XIAO_LAB
 
 if USB_DEVICE_STACK
